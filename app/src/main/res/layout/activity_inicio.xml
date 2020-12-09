@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/logo1"
+        android:gravity="center"
+        android:text="SUPER MARKET"
+        android:textColor="@color/logo"
+        android:textSize="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="@id/logo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:lottie_autoPlay="true"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/icono" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <Button
+            android:id="@+id/correo"
+            android:elevation="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/correo"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="75dp"
+            android:background="#fff"
+            android:text="INICIAR CON CORREO ELECTRÓNICO"
+            android:textColor="@color/logo" />
+
+        <Button
+            android:id="@+id/google"
+            android:elevation="30dp"
+            android:translationZ="30dp"
+            android:stateListAnimator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/google"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#1976d2"
+            android:text="INICIAR SESIÓN CON GOOGLE"
+            android:textColor="#fff"
+            android:layout_marginBottom="15dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
